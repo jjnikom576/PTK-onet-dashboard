@@ -1,0 +1,253 @@
+/* ============================================
+   O-NET Dashboard Custom Styles
+   ============================================ */
+
+/* Global Spacing */
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #eff6ff, #eef2ff, #faf5ff);
+  padding: 2rem 1rem;
+}
+
+.dashboard-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* เพิ่ม gap ระหว่าง section */
+}
+
+/* Section Cards - เพิ่ม margin ด้านบนทุก section */
+.section-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 2.5rem; /* เพิ่ม margin ระหว่างหัวข้อ */
+}
+
+.section-card:first-child {
+  margin-top: 0; /* ไม่ต้อง margin สำหรับ card แรก */
+}
+
+/* Section Headers - เพิ่มระยะห่าง */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem; /* เพิ่มจาก 1.5rem เป็น 2rem */
+  padding-bottom: 1rem; /* เพิ่ม padding ล่าง */
+  border-bottom: 2px solid #f3f4f6; /* เส้นแบ่ง */
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+/* Icon Badge in Header */
+.header-icon {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  min-height: 3rem;
+}
+
+/* Chart Container - เพิ่ม padding */
+.chart-container {
+  background: #f9fafb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Year Section in Bar Chart */
+.year-section {
+  margin-bottom: 3rem; /* เพิ่มระยะห่างระหว่างปี */
+}
+
+.year-section:last-child {
+  margin-bottom: 0;
+}
+
+.year-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Grid Layouts */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-left: 4px solid;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Gauge Charts */
+.gauge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Student Cards */
+.student-card {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.student-card:hover {
+  transform: scale(1.05);
+}
+
+/* Insight Box */
+.insight-box {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(to right, #fef3c7, #fed7aa);
+  border-radius: 0.75rem;
+  border-left: 4px solid #f59e0b;
+}
+
+/* Trend Cards */
+.trend-card {
+  background: linear-gradient(to bottom right, #f9fafb, #eff6ff);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.trend-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Key Insights Section */
+.insights-section {
+  background: linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6);
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  color: white;
+  margin-top: 3rem; /* เพิ่มระยะห่างจากส่วนบน */
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.insight-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.insight-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+.dashboard-footer {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-top: 3rem; /* เพิ่มระยะห่างจาก insights */
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-content {
+    gap: 2rem;
+  }
+  
+  .section-card {
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-card {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Utility Classes */
+.mb-large {
+  margin-bottom: 3rem !important;
+}
+
+.mt-large {
+  margin-top: 3rem !important;
+}
+
+.spacing-relaxed > * + * {
+  margin-top: 2rem;
+}
